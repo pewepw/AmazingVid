@@ -16,6 +16,9 @@ class CourseViewController: UIViewController {
     @IBOutlet weak var developerCourseButton: UIButton!
     
     var courses = CourseStore.downloadNewCourses()
+    var selectedCourse : Course!
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +37,38 @@ class CourseViewController: UIViewController {
     }
   
     @IBAction func chefCourseDidTap(_ sender: Any) {
+        let chefCourse = self.courses[0]
+        selectedCourse = chefCourse
+        
+        self.performSegue(withIdentifier: Storyboard.showCourseDetail, sender: nil)
     }
     
     @IBAction func popStarCourseDidTap(_ sender: Any) {
+        let popStarCourse = self.courses[1]
+        selectedCourse = popStarCourse
+        
+        self.performSegue(withIdentifier: Storyboard.showCourseDetail, sender: nil)
+
     }
     
     @IBAction func developerCourseDidTap(_ sender: Any) {
+        let developerCourse = self.courses[2]
+        selectedCourse = developerCourse
+        
+        self.performSegue(withIdentifier: Storyboard.showCourseDetail, sender: nil)
+
+    }
+    
+    struct  Storyboard {
+        static let showCourseDetail = "ShowCourseDetail"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Storyboard.showCourseDetail {
+            if let courseDetailViewController = segue.destination as? CourseDetailsViewController {
+                courseDetailViewController.course = self.selectedCourse
+            }
+        }
     }
     
 }

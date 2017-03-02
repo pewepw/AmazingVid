@@ -12,6 +12,10 @@
 		4A0EFB891E67E5B300C89A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0EFB871E67E5B300C89A2E /* Main.storyboard */; };
 		4A0EFB8B1E67E5B300C89A2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0EFB8A1E67E5B300C89A2E /* Assets.xcassets */; };
 		4A0EFB8E1E67E5B300C89A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0EFB8C1E67E5B300C89A2E /* LaunchScreen.storyboard */; };
+		4A1530FB1E68842E00EEFFF1 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1530F81E68842E00EEFFF1 /* YouTubePlayer.swift */; };
+		4A1530FC1E68842E00EEFFF1 /* YoutubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1530F91E68842E00EEFFF1 /* YoutubePlayerViewController.swift */; };
+		4A1530FF1E6884CE00EEFFF1 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1530FE1E6884CE00EEFFF1 /* PlayerViewController.swift */; };
+		4A1531011E688C3900EEFFF1 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 4A1531001E688C3900EEFFF1 /* YTPlayer.html */; };
 		4A3DD0C51E67EB1E00359CA3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3DD0C41E67EB1E00359CA3 /* Course.swift */; };
 		4A3DD0C71E67ECBC00359CA3 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3DD0C61E67ECBC00359CA3 /* CourseStore.swift */; };
 		4AAA532E1E6832B400EF6BE8 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA532D1E6832B400EF6BE8 /* CourseDetailsViewController.swift */; };
@@ -25,6 +29,10 @@
 		4A0EFB8A1E67E5B300C89A2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A0EFB8D1E67E5B300C89A2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A0EFB8F1E67E5B300C89A2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1530F81E68842E00EEFFF1 /* YouTubePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubePlayer.swift; sourceTree = "<group>"; };
+		4A1530F91E68842E00EEFFF1 /* YoutubePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubePlayerViewController.swift; sourceTree = "<group>"; };
+		4A1530FE1E6884CE00EEFFF1 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		4A1531001E688C3900EEFFF1 /* YTPlayer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = YTPlayer.html; sourceTree = "<group>"; };
 		4A3DD0C41E67EB1E00359CA3 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		4A3DD0C61E67ECBC00359CA3 /* CourseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseStore.swift; sourceTree = "<group>"; };
 		4AAA532D1E6832B400EF6BE8 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +79,16 @@
 			path = AmazingVid;
 			sourceTree = "<group>";
 		};
+		4A1530F71E68842E00EEFFF1 /* YoutubePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				4A1530F81E68842E00EEFFF1 /* YouTubePlayer.swift */,
+				4A1530F91E68842E00EEFFF1 /* YoutubePlayerViewController.swift */,
+				4A1531001E688C3900EEFFF1 /* YTPlayer.html */,
+			);
+			path = YoutubePlayer;
+			sourceTree = "<group>";
+		};
 		4A3DD0C81E67F1F700359CA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0EFB871E67E5B300C89A2E /* Main.storyboard */,
+				4A1530F71E68842E00EEFFF1 /* YoutubePlayer */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -93,6 +112,7 @@
 			children = (
 				4A0EFB851E67E5B300C89A2E /* CourseViewController.swift */,
 				4AAA532D1E6832B400EF6BE8 /* CourseDetailsViewController.swift */,
+				4A1530FE1E6884CE00EEFFF1 /* PlayerViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -159,6 +179,7 @@
 			files = (
 				4A0EFB8E1E67E5B300C89A2E /* LaunchScreen.storyboard in Resources */,
 				4A0EFB8B1E67E5B300C89A2E /* Assets.xcassets in Resources */,
+				4A1531011E688C3900EEFFF1 /* YTPlayer.html in Resources */,
 				4A0EFB891E67E5B300C89A2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1530FC1E68842E00EEFFF1 /* YoutubePlayerViewController.swift in Sources */,
+				4A1530FF1E6884CE00EEFFF1 /* PlayerViewController.swift in Sources */,
+				4A1530FB1E68842E00EEFFF1 /* YouTubePlayer.swift in Sources */,
 				4A0EFB861E67E5B300C89A2E /* CourseViewController.swift in Sources */,
 				4A3DD0C51E67EB1E00359CA3 /* Course.swift in Sources */,
 				4AAA532E1E6832B400EF6BE8 /* CourseDetailsViewController.swift in Sources */,
